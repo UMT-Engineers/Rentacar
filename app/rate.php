@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-class location extends Model
+class rate extends Model
 {
-    protected table = 'locations';
+    protected table = 'rates';
 }

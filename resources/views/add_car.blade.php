@@ -1,40 +1,72 @@
-<?php
-session_start();
-
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" href="../favicon.ico">
-	<title>Rent a car Admin </title>
+  <title>AdminLTE 2 | Blank Page</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href=" ../public/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="public/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href=" ../public/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="public/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href=" ../public/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="public/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href=" ../public/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="public/dist/css/skins/_all-skins.min.css">
-  <!-- Morris chart -->
-  <link rel="stylesheet" href="public/bower_components/morris.js/morris.css">
-  <!-- jvectormap -->
-  <link rel="stylesheet" href="public/bower_components/jvectormap/jquery-jvectormap.css">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="public/bower_components/bootstrap-daterangepicker/daterangepicker.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
+  <link rel="stylesheet" href=" ../public/dist/css/skins/_all-skins.min.css">
+  <style type="text/css">
+    .imagePreview {
+    width: 100%;
+    height: 180px;
+    background-position: center center;
+  background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-color:#fff;
+    background-size: cover;
+  background-repeat:no-repeat;
+    display: inline-block;
+  box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+}
+.btn-primary
+{
+  display:block;
+  border-radius:0px;
+  box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+  margin-top:-5px;
+}
+.imgUp
+{
+  margin-bottom:15px;
+}
+.del
+{
+  position:absolute;
+  top:0px;
+  right:15px;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  background-color:rgba(255,255,255,0.6);
+  cursor:pointer;
+}
+.imgAdd
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background-color:#4bd7ef;
+  color:#fff;
+  box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
+  text-align:center;
+  line-height:30px;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:15px;
+}
+  </style>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -80,7 +112,7 @@ session_start();
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="../public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -93,7 +125,7 @@ session_start();
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="../public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         AdminLTE Design Team
@@ -105,7 +137,7 @@ session_start();
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="../public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Developers
@@ -117,7 +149,7 @@ session_start();
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="../public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Sales Department
@@ -129,7 +161,7 @@ session_start();
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="../public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Reviewers
@@ -266,13 +298,13 @@ session_start();
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="public/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src=" ../public/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src=" ../public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer
@@ -320,7 +352,7 @@ session_start();
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src=" ../public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -362,7 +394,7 @@ session_start();
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="admin/add_car"><i class="fa fa-cab"></i> Add Car</a></li>
+            <li><a href="../admin/add_car"><i class="fa fa-cab"></i> Add Car</a></li>
             <li><a href="index.html"><i class="fa fa-cab"></i> Update Car</a></li>
             <li><a href="index.html"><i class="fa fa-cab"></i> Delete Car</a></li>
             <li><a href="index.html"><i class="fa fa-cab"></i> View Car</a></li>
@@ -378,7 +410,7 @@ session_start();
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="admin/add_driver"><i class="fa fa-user-plus"></i> Add Driers</a></li>
+            <li><a href="../admin/add_driver"><i class="fa fa-user-plus"></i> Add Driers</a></li>
             <li><a href="index.html"><i class="fa fa-user"></i> Update Driver</a></li>
             <li><a href="index.html"><i class="fa fa-user-times"></i> Delete Driver</a></li>
             <li><a href="index.html"><i class="fa fa-users"></i> View Driver</a></li>
@@ -394,7 +426,7 @@ session_start();
     </span>
   </a>
   <ul class="treeview-menu">
-    <li><a href="admin/add_customer"><i class="fa fa-user-plus"></i> Add Customers</a></li>
+    <li><a href="../admin/add_customer"><i class="fa fa-user-plus"></i> Add Customers</a></li>
     <li><a href="index.html"><i class="fa fa-user"></i> Update Customers</a></li>
     <li><a href="index.html"><i class="fa fa-user-times"></i> Delete Customers</a></li>
     <li><a href="index.html"><i class="fa fa-users"></i> View Customers</a></li>
@@ -438,387 +470,148 @@ session_start();
 
     <!-- Main content -->
     <section class="content">
-      <!-- Small boxes (Stat box) -->
-      <div class="row">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h3>150</h3>
+     
+      <!-- Default box -->
+      <div class="box">
+      <form action="../admin/create_car" method="POST">
+     {{csrf_field()}}
+        <div class="box-header with-border">
+          <h3 class="box-title">Add Car</h3>
 
-              <p>New Orders</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-bag"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                    title="Collapse">
+              <i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+              <i class="fa fa-times"></i></button>
           </div>
         </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
+        <div class="box-body">
+          <div class="form-group">
+                  <label>Company Name</label>
+                  <select class="form-control" required name="company">
+                    <option>Toyota</option>
+                    <option>BMW</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    <option>option 5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Model</label>
+                  <select class="form-control" required name="model">
+                    <option value="2018">2018</option>
+    <option value="2017">2017</option>
+    <option value="2016">2016</option>
+    <option value="2015">2015</option>
+    <option value="2014">2014</option>
+    <option value="2013">2013</option>
+    <option value="2012">2012</option>
+    <option value="2011">2011</option>
+    <option value="2010">2010</option>
+    <option value="2009">2009</option>
+    <option value="2008">2008</option>
+    <option value="2007">2007</option>
+    <option value="2006">2006</option>
+    <option value="2005">2005</option>
+    <option value="2004">2004</option>
+    <option value="2003">2003</option>
+    <option value="2002">2002</option>
+    <option value="2001">2001</option>
+    <option value="2000">2000</option>
+    <option value="1999">1999</option>
+    <option value="1998">1998</option>
+    <option value="1997">1997</option>
+    <option value="1996">1996</option>
+    <option value="1995">1995</option>
+    <option value="1994">1994</option>
+    <option value="1993">1993</option>
+    <option value="1992">1992</option>
+    <option value="1991">1991</option>
+    <option value="1990">1990</option>
+    <option value="1989">1989</option>
+    <option value="1988">1988</option>
+    <option value="1987">1987</option>
+    <option value="1986">1986</option>
+    <option value="1985">1985</option>
+    <option value="1984">1984</option>
+    <option value="1983">1983</option>
+    <option value="1982">1982</option>
+    <option value="1981">1981</option>
+    <option value="1980">1980</option>
+    <option value="1979">1979</option>
+    <option value="1978">1978</option>
+    <option value="1977">1977</option>
+    <option value="1976">1976</option>
+    <option value="1975">1975</option>
+    <option value="1974">1974</option>
+    <option value="1973">1973</option>
+    <option value="1972">1972</option>
+    <option value="1971">1971</option>
+    <option value="1970">1970</option>
+                  </select>
+                </div>
+                <label>Car Name</label>
+                <input type="text" class="form-control"  placeholder="Enter Car Name" name="name" required>
+                <div class="form-group">
+                  <label>Pesgenger</label>
+                  <select class="form-control" name="no_of_passenger">
+                    <option>2</option>
+                    <option>4</option>
+                    <option>7</option>
+                    <option>12</option>
+                    <option>32</option>
+                  </select>
+                </div>
+                <label>Registration Numer</label>
+                <input type="text" class="form-control"  placeholder="LXG1234" name="registeration" required>
+                <br>
+                <div class="form-group">
+                  <label>Lugage Cpacity</label>
+                  <select class="form-control" name="luggage">
+                    <option>10 kg</option>
+                    <option>20 kg</option>
+                    <option>30 kg</option>
+                    <option>50kg</option>
+                    <option>100kg</option>
+                  </select>
+                </div>
+             
 
-              <p>Rate</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-stats-bars"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
+                <div class="radio">
+                    <label>
+                      <input type="radio"  id="optionsRadios1" name="air_condition" value="yes" checked="">
+                      Air Condition Available
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="air_condition" id="optionsRadios1" value="no" checked="">
+                      Air Condition Not Available
+                    </label>
+                  </div>
+                  <br><div class="container">
+  <div class="row">
+  <div class="col-sm-2 imgUp">
+    <div class="imagePreview"></div>
+<label class="btn btn-primary">
+                              Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+        </label>
+  </div><!-- col-2 -->
+  <i class="fa fa-plus imgAdd"></i>
+ </div><!-- row -->
+</div><!-- container -->
         </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3>44</h3>
-
-              <p>User Registrations</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
+        <!-- /.box-body -->
+        <div class="box-footer" align="right">
+                <input style="width: 200px;"  class="btn btn-block btn-primary btn-lg" type="submit" value="submit">
         </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-red">
-            <div class="inner">
-              <h3>65</h3>
-
-              <p>Unique Visitors</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-pie-graph"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
+        <!-- /.box-footer-->
+        </form>
       </div>
-      <!-- /.row -->
-      <!-- main row -->
-      <div class="row">
-        <!---left row-->
-        <section class="col-lg-8 connectedSortable">
-         <!---place order-->
-         
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Latest Orders</h3>
-    
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <div class="table-responsive">
-                <table class="table no-margin">
-                  <thead>
-                  <tr>
-                    <th>Order ID</th>
-                    <th>Item</th>
-                    <th>Status</th>
-                    <th>Popularity</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                    <td>Call of Duty IV</td>
-                    <td><span class="label label-success">Shipped</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-warning">Pending</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>iPhone 6 Plus</td>
-                    <td><span class="label label-danger">Delivered</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-info">Processing</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-warning">Pending</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
-                    <td>iPhone 6 Plus</td>
-                    <td><span class="label label-danger">Delivered</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                    <td>Call of Duty IV</td>
-                    <td><span class="label label-success">Shipped</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer clearfix">
-              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-              <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
-            </div>
-            <!-- /.box-footer -->
-          </div>
-          <section class="col-lg-6 connectedSortable">
-            <div class="box box-info">
-              <div class="box-header with-border">
-                <h3 class="box-title">Latest Customers</h3>
+      <!-- /.box -->
       
-                <div class="box-tools pull-right">
-                  <!-- <span class="label label-danger">8 New Members</span> -->
-                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.box-header -->
-              <div class="box-body no-padding">
-                <ul class="users-list clearfix">
-                  <li>
-                    <img src="public/dist/img/user1-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Alexander Pierce</a>
-                    <span class="users-list-date">Today</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user8-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Norman</a>
-                    <span class="users-list-date">Yesterday</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user7-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Jane</a>
-                    <span class="users-list-date">12 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user6-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">John</a>
-                    <span class="users-list-date">12 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user2-160x160.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Alexander</a>
-                    <span class="users-list-date">13 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user5-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Sarah</a>
-                    <span class="users-list-date">14 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user4-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Nora</a>
-                    <span class="users-list-date">15 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user3-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Nadia</a>
-                    <span class="users-list-date">15 Jan</span>
-                  </li>
-                </ul>
-                <!-- /.users-list -->
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer text-center">
-                <a href="javascript:void(0)" class="uppercase">View All Users</a>
-              </div>
-              <!-- /.box-footer -->
-            </div>
-          </section>
-        
-          <section class="col-lg-6 connectedSortable">
-            <div class="box box-danger">
-              <div class="box-header with-border">
-                <h3 class="box-title">Latest Drivers</h3>
-      
-                <div class="box-tools pull-right">
-                  <!-- <span class="label label-danger">8 New Members</span> -->
-                  <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                  </button>
-                  <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-                  </button>
-                </div>
-              </div>
-              <!-- /.box-header -->
-              <div class="box-body no-padding">
-                <ul class="users-list clearfix">
-                  <li>
-                    <img src="public/dist/img/user1-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Alexander Pierce</a>
-                    <span class="users-list-date">Today</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user8-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Norman</a>
-                    <span class="users-list-date">Yesterday</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user7-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Jane</a>
-                    <span class="users-list-date">12 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user6-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">John</a>
-                    <span class="users-list-date">12 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user2-160x160.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Alexander</a>
-                    <span class="users-list-date">13 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user5-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Sarah</a>
-                    <span class="users-list-date">14 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user4-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Nora</a>
-                    <span class="users-list-date">15 Jan</span>
-                  </li>
-                  <li>
-                    <img src="public/dist/img/user3-128x128.jpg" alt="User Image">
-                    <a class="users-list-name" href="#">Nadia</a>
-                    <span class="users-list-date">15 Jan</span>
-                  </li>
-                </ul>
-                <!-- /.users-list -->
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer text-center">
-                <a href="javascript:void(0)" class="uppercase">View All Users</a>
-              </div>
-              <!-- /.box-footer -->
-            </div>
-          </section>
-     <!---palce order-->    
-        </section>
-        <!---right row-->
-        <section class="col-lg-4 connectedSortable">
-          <div class="box box-solid bg-green-gradient">
-            <div class="box-header">
-              <i class="fa fa-calendar"></i>
-    
-              <h3 class="box-title">Calendar</h3>
-              <!-- tools box -->
-              <div class="pull-right box-tools">
-                <!-- button with a dropdown -->
-                <div class="btn-group">
-                  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-bars"></i></button>
-                  <ul class="dropdown-menu pull-right" role="menu">
-                    <li><a href="#">Add new event</a></li>
-                    <li><a href="#">Clear events</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">View calendar</a></li>
-                  </ul>
-                </div>
-                <button type="button" class="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i>
-                </button>
-              </div>
-              <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <!--The calendar -->
-              <div id="calendar" style="width: 100%"></div>
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer text-black">
-              <div class="row">
-                <div class="col-sm-6">
-                 
-                <!-- /.col -->
-                
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-            </div>
-          </div>
-          <div class="box box-info">
-              <div class="box-header">
-                <i class="fa fa-envelope"></i>
-  
-                <h3 class="box-title">Quick Email</h3>
-                <!-- tools box -->
-                <div class="pull-right box-tools">
-                  <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip"
-                          title="Remove">
-                    <i class="fa fa-times"></i></button>
-                </div>
-                <!-- /. tools -->
-              </div>
-              <div class="box-body">
-                <form action="#" method="post">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="emailto" placeholder="Email to:">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject">
-                  </div>
-                  <div>
-                    <textarea class="textarea" placeholder="Message"
-                              style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                  </div>
-                </form>
-              </div>
-              <div class="box-footer clearfix">
-                <button type="button" class="pull-right btn btn-default" id="sendEmail">Send
-                  <i class="fa fa-arrow-circle-right"></i></button>
-              </div>
-            </div>
-
-        </section>
-      </div>
-      <!-- /.row (main row) -->
-
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
@@ -832,6 +625,7 @@ session_start();
     <!-- Create the tabs -->
     <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
       <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+
       <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
     </ul>
     <!-- Tab panes -->
@@ -1024,41 +818,48 @@ session_start();
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="public/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="public/bower_components/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
+<script src=" ../public/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Morris.js charts -->
-<script src="public/bower_components/raphael/raphael.min.js"></script>
-<script src="public/bower_components/morris.js/morris.min.js"></script>
-<!-- Sparkline -->
-<script src="public/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-<!-- jvectormap -->
-<script src="public/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="public/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="public/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="public/bower_components/moment/min/moment.min.js"></script>
-<script src="public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-<!-- datepicker -->
-<script src="public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-<!-- Slimscroll -->
-<script src="public/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src=" ../public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src=" ../public/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="public/bower_components/fastclick/lib/fastclick.js"></script>
+<script src=" ../public/bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="public/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="public/dist/js/pages/dashboard.js"></script>
+<script src=" ../public/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="public/dist/js/demo.js"></script>
+<script src=" ../public/dist/js/demo.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.sidebar-menu').tree()
+  })
+</script>
+<script type="text/javascript">
+  $(".imgAdd").click(function(){
+    $(this).closest(".row").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+  });
+  $(document).on("click", "i.del" , function() {
+    $(this).parent().remove();
+  });
+  $(function() {
+      $(document).on("change",".uploadFile", function()
+      {
+          var uploadFile = $(this);
+          var files = !!this.files ? this.files : [];
+          if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+          if (/^image/.test( files[0].type)){ // only image file
+              var reader = new FileReader(); // instance of the FileReader
+              reader.readAsDataURL(files[0]); // read the local file
+
+              reader.onloadend = function(){ // set image data as background of div
+                  //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+  uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+              }
+          }
+
+      });
+  });
+</script>
 </body>
 </html>

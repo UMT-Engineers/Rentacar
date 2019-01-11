@@ -13,10 +13,18 @@ class CreateCarsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cars', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::table('cars', function (Blueprint $table) {
+            $table->increments('cid');
+            $table->string('name');
+            $table->string('company');
+            $table->string('air_condition');
+            $table->string('registeration');
+            $table->integer('no_of_passenger')->default(4);
+            $table->integer('luggage');
+            $table->integer('doors');
             $table->timestamps();
         });
+        
     }
 
     /**

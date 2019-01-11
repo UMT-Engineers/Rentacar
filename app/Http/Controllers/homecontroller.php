@@ -27,6 +27,7 @@ class homecontroller extends Controller
     public function create(Request $request)
     {
        $data = $request->input();
+       print_r($data);
        $tbldata = "";
        if (!empty($data))
        {
@@ -52,15 +53,15 @@ class homecontroller extends Controller
             // $tbldata = DB::table('users')->get();
             // print_r($tbldata);
             $request->session()->flash('alert-danger', $exp->getmessage());
-            return redirect()->back();
+           // return redirect()->back();
           }
           $request->session()->flash('alert-success', 'User Added successfully!');
-          return redirect()->back();
+          //return redirect()->back();
           
        }
        else
        {
-           return redirect()->back();
+          // return redirect()->back();
        }
        
     }

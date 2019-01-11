@@ -41,9 +41,27 @@ Route::get('/signup', function () {
 Route::get('/admin', function () {
 	return view('admin');
 });
-Route::get('/admin/login', function () {
+Route::get('/admin_login', function () {
 	return view('login');
 });
+Route::get('admin/add_customer', function () {
+	return view('add_customer');
+});
+Route::post('admin/create_customer', [
+    'uses'=> 'customerController@create'
+]);
+Route::get('admin/add_car', function () {
+	return view('add_car');
+});
+Route::post('admin/create_car', [
+    'uses'=> 'carsController@create'
+]);
+Route::get('admin/add_driver', function () {
+	return view('add_driver');
+});
+Route::post('admin/create_driver', [
+    'uses'=> 'driverController@create'
+]);
 Route::get('/rates', function () {
 	return view('rates');
 });
