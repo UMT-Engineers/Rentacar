@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\customer;
+use App\location;
+
 
 class customercontroller extends Controller
 {
@@ -42,6 +44,13 @@ class customercontroller extends Controller
             echo $newdata->cnic =$data['cnic'];
             // $newdata->total_drive =$data['total_drive'];
              $newdata->password =$data['password'];
+             $newlocation= new location();
+             $newlocation->addresses =$data['addresses'];
+             $newlocation->town =$data['town'];
+             $newdlocation->city =$data['city'];
+             $newdlocation->save();
+             $locid=location::where('addresses',$data['addresses'];)->first()->toArray();
+             $newdata->locid=$locid;
              $newdata->save();
               //change text fields it miss match with database attributes
 

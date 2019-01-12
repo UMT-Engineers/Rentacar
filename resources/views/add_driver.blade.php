@@ -597,42 +597,41 @@
 
         <h2>Address</h2>
 
-        <div class="form-group">
-          <p class="col-sm-offset-2 col-sm-10 help-block">Street address, P.O. box, company name, c/o</p>
-          <label for="inputAddressLine1" class="col-sm-2 control-label">Address Line 1</label>
-          <div class="col-sm-7">
-            <input type="text" class="form-control" id="inputAddressLine1" name="address-line1" placeholder="Address Line 1" required>
-          </div>
-        </div>
+     
+                                        <div class="form-group">
+                                            <p class="col-sm-offset-2 col-sm-10 help-block">Apartment, suite , unit,
+                                                building, floor, etc.</p>
+                                            <label for="inputAddressLine2" class="col-sm-2 control-label">Address</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputAddressLine2" name="addresses"
+                                                    placeholder="Address Line 2">
+                                            </div>
+                                        </div>
 
-        <div class="form-group">
-          <p class="col-sm-offset-2 col-sm-10 help-block">Apartment, suite , unit, building, floor, etc.</p>
-          <label for="inputAddressLine2" class="col-sm-2 control-label">Address Line 2</label>
-          <div class="col-sm-7">
-            <input type="text" class="form-control" id="inputAddressLine2" name="address-line2" placeholder="Address Line 2" required>
-          </div>
-        </div>
+                                        <div class="form-group">
+                                            <label for="inputCityTown" class="col-sm-2 control-label">town</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputCityTown" name="town"
+                                                    placeholder="City / Town">
+                                            </div>
+                                        </div>
 
-        <div class="form-group">
-          <label for="inputCityTown" class="col-sm-2 control-label">City / Town</label>
-          <div class="col-sm-7">
-            <input type="text" class="form-control" id="inputCityTown" name="city-town" placeholder="City / Town" required>
-          </div>
-        </div>
+                                        <div class="form-group">
+                                            <label for="inputStateProvinceRegion" class="col-sm-2 control-label">city</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputStateProvinceRegion"
+                                                    name="city" placeholder="State / Province / Region">
+                                            </div>
+                                        </div>
 
-        <div class="form-group">
-          <label for="inputStateProvinceRegion" class="col-sm-2 control-label">State / Province / Region</label>
-          <div class="col-sm-7">
-            <input type="text" class="form-control" id="inputStateProvinceRegion" name="state-province-region" placeholder="State / Province / Region" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="inputZipPostalCode" class="col-sm-2 control-label">Zip / Postal Code</label>
-          <div class="col-sm-7">
-            <input type="text" class="form-control" id="inputZipPostalCode" name="zip-postal-code" placeholder="Zip / Postal Code" required>
-          </div>
-        </div>
+                                        <div class="form-group">
+                                            <label for="inputZipPostalCode" class="col-sm-2 control-label">Zip / Postal
+                                                Code</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputZipPostalCode" name="zip-postal-code"
+                                                    placeholder="Zip / Postal Code">
+                                            </div>
+                                        </div>
 
                   
 

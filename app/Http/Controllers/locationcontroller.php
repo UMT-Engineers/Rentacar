@@ -71,5 +71,65 @@ class locationcontroller extends Controller
        }
        
     }
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+
+       $cars = car::get()->toArray();
+
+       return view('frmSignup', ['cars'=>$cars]);
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edituser($id)
+    {
+      $userdata = car::where('id',$id)->first()->toArray();
+      // echo "<pre>";
+      // print_r($userdata);
+
+      // echo $id;
+      // die();
+      return view('frmEditUser')->with('userdata',$userdata);
+      
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function updateuser(Request $request)
+    {
+        $postdata=$request->input();
+
+        car::where('id',$postdata['userid'])->Update(['name'=>$postdata['name'],'email'=>$postdata['email']]);
+        die();
+
+        // echo "<pre>";
+        // print_r($postdata);
+        // die();
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function deleteuser($id)
+    {
+        user::where('id',$id)->delete();
+        redirect()->to('/listcars');
+    }
 
 }

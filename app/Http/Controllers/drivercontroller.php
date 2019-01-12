@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\driver;
+use App\location;
+
 class drivercontroller extends Controller
 {
      
@@ -45,7 +47,13 @@ class drivercontroller extends Controller
             // $newdata->total_drive =$data['total_drive'];
            echo  $newdata->duty_start =$data['duty_start'];
            echo  $newdata->duty_end =$data['duty_end'];
-
+           $newlocation= new location();
+             $newlocation->addresses =$data['addresses'];
+             $newlocation->town =$data['town'];
+             $newdlocation->city =$data['city'];
+             $newdlocation->save();
+             $locid=location::where('addresses',$data['addresses'])->first()->toArray();
+             $newdata->locid=$locid;
              $newdata->save();
             //change text fields it miss match with database attributes
 
@@ -74,16 +82,14 @@ class drivercontroller extends Controller
        }
        
     }
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function show($id)
     {
 
        $driver = driver::get()->toArray();
 
        return view('frmSignup', ['drivers'=>$driver]);
-        //
+        
     }
 
     /**
